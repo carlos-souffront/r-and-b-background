@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf-8">
+  <title>pop</title>
+  <font></font>
+</head>
+
+<style>
+  @keyframes pulse {
+    0% {
+      background-position: 0 85%;
+    }
+    
+    50% {
+      background-position: 100%, 20%;
+    }
+    
+    100% {
+      background-position: 0 85%
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg2 {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(55deg, #db7093, #c71585, #ffc0cb, #ff69b4, #ffe4e1, #ff1493, #fff0f5);
+    background-size: 150% 150%;
+    animation: pulse 15s infinite linear;
+
+  }
+</style>
+
+<div class="bg2"></div>
