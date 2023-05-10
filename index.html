@@ -63,16 +63,20 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-image: conic-gradient(from var(--color-stop), #9400d3 0%, #800080 20%, #4b0082 40%, #8b008b 60%, #9932cc 80%, #ba55d3 100%);
+    background-image: radial-gradient(#dda0dd, #da70d6), 
+      conic-gradient(from var(--color-stop), #9400d3 0%, #800080 20%, #4b0082 40%, #8b008b 60%, #9932cc 80%, #ba55d3 100%);
     background-size: 200% 200%;
     background-position: center;
+    background-blend-mode: multiply;
     position: absolute;
-    z-index: -1;
-    animation: spin 10s ease-in-out infinite;
+    z-index: 0;
+    animation: spin 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
+  
   
  
 </style>
 
+linear-gradient(to bottom right, #dda0dd, #da70d6),
 
 <div class="bg3"></div>
